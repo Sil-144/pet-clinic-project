@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="shortcut icon"
+      href="images/Green and Beige Classic Elegant Nature Foundation Logo (1).png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .nav {
+        font-family: "Nunito", serif;
+        z-index: 10000;
+      }
+      .bg-nav-bar {
+        background-color: #fcf9f4 !important;
+        top: 0px;
+        position: sticky !important;
+      }
+      .bg-clo {
+        background-color: #f69946;
+      }
+      a {
+        color: black !important;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .active:hover {
+        border-bottom: 2px solid #f69946;
+      }
+      .navbar-img {
+        width: 200px;
+        margin-left: 20px;
+      }
+      .hero {
+        width: 100%;
+        height: 800px;
+      } /*header section*/
+      .hero {
+        background-image: url(images/pic1.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .hero h1 {
+        font-size: 80px;
+        position: absolute;
+        top: 150px;
+        margin-left: 150px;
+        font-family: "Paytone One", serif;
+        color: #443935;
+      }
+      .icon {
+        position: absolute;
+        top: 100px;
+        margin-left: 150px;
+        font-size: 20px;
+        font-family: "Paytone One", serif;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #f69946;
+        text-align: center;
+        color: #fff;
+      }
+      .foot-pt {
+        color: #443935;
+      }
+      .but {
+        margin-top: 500px;
+        padding: 10px;
+        width: 180px;
+        border-radius: 20px;
+        background-color: #f69946;
+        margin-left: 150px;
+        font-family: "Nunito", serif;
+      }
+      .but-icon {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: #fff;
+      }
+      .img-ps {
+        position: relative;
+        margin-left: 150px;
+      }
+      .icon-img {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .p1 {
+        border-radius: 50%;
+        position: absolute;
+        height: 60px;
+        left: 0;
+      }
+      .p2 {
+        border-radius: 50%;
+        position: absolute;
+        height: 60px;
+        left: 45px;
+      }
+      .p3 {
+        border-radius: 50%;
+        position: absolute;
+        height: 60px;
+        left: 90px;
+      }
+      .ptag {
+        font-size: 20px;
+        font-family: "Nunito", serif;
+      }
+      .p1-img {
+        display: flex;
+        left: 160px;
+        position: absolute;
+        border-left: 2px solid black;
+        padding-left: 5px;
+      }
+      .p2-img {
+        display: flex;
+        left: 160px;
+        top: 30px;
+        position: absolute;
+        border-left: 2px solid black;
+        padding-left: 5px;
+      }
+      .st-col {
+        color: #f69946;
+      } /*sec section1*/
+      #aboutus {
+        height: 600px;
+        width: 100%;
+      }
+      #aboutus h1 {
+        margin-top: 150px;
+        font-size: 40px;
+        font-family: "Paytone One", serif;
+        color: #443935;
+        margin-left: 150px;
+      }
+      .aboutus {
+        position: absolute;
+        top: 990px;
+        font-size: 20px;
+        font-family: "Paytone One", serif;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        text-align: center;
+        color: #f69946;
+        margin-left: 150px;
+      }
+      .bg-col {
+        margin-left: 120px;
+        width: 40%;
+        height: 250px;
+        background-color: #fcf9f4;
+        border-radius: 8px;
+        padding: 30px;
+      }
+      .cardimg {
+        width: 100%;
+        margin: 2px;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 9px;
+        background-color: #fcf9f4;
+        position: relative;
+      }
+      .cardimg h3 {
+        font-size: 20px;
+        font-family: "Paytone One", serif;
+        margin-left: 50px;
+        display: flex;
+        color: #443935;
+      }
+      .cardimg h2 {
+        color: #f69946;
+        font-size: 40px;
+        margin-left: 50px;
+        font-weight: bold;
+        position: absolute;
+        top: 50px;
+      }
+      .but-icon-sec {
+        background-color: #f69946;
+        padding: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 50%;
+      }
+      .sec-imag-header {
+        position: relative;
+      }
+      .cardimg p {
+        font-size: 15px;
+        font-family: "Nunito", serif;
+        text-align: justify;
+        text-indent: 10px;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .sec-imag {
+        position: absolute;
+        width: 750px;
+        top: 1000px;
+        right: 0;
+        border-radius: 9px 0 0 9px;
+      }
+      .third-img {
+        position: absolute;
+        left: 10px;
+      }
+      .third-img {
+        position: absolute;
+        top: 1200px;
+        width: 200px;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 10px;
+      }
+      .tab {
+        text-decoration: none;
+      }
+      .tab1 {
+        padding: 10px;
+      }
+      .grid {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 3px;
+      }
+      .grid-text {
+        font-size: 15px;
+      } /*sec section1*/
+      #service {
+        width: 100%;
+        height: 1200px;
+        border: 1px solid white;
+        background-color: #fcf9f4; /* here is error */
+        position: relative;
+      }
+      #service h1 {
+        font-family: "Paytone One", serif;
+        margin-top: 130px;
+        font-size: 50px;
+        color: #443935;
+        text-align: center;
+        margin-left: 150px;
+      }
+      #service h3 {
+        font-family: "Paytone One", serif;
+        top: 95px;
+        left: 740px;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        color: #f69946;
+      }
+      .foot-pt {
+        color: #443935;
+        margin-left: 12px;
+      }
+      .box-2 {
+        height: 350px;
+        border-radius: 0 0 1000px 1000px;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+        margin-top: -68px;
+      }
+      .box-1 {
+        height: 350px;
+        border-radius: 1000px 1000px 0 0;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+        margin-top: 100px;
+      }
+      .cat-icon {
+        font-size: 80px;
+        color: #f69946;
+        position: absolute;
+        left: 170px;
+        top: 80px;
+      }
+      .box-2 .cat-icon {
+        font-size: 80px;
+        color: #f69946;
+        position: absolute;
+        left: 170px;
+        top: 45px;
+      }
+      .box-1 h4 {
+        font-size: 30px;
+        font-family: "Paytone One", serif;
+        margin-top: 180px;
+        text-align: center;
+        color: #443935;
+      }
+      .box-1 pre {
+        font-size: 17px;
+        text-indent: 20px;
+        color: #443935;
+        padding: 40px;
+        position: absolute;
+        top: 200px;
+        font-family: "Nunito", serif;
+      }
+      .box-2 h4 {
+        font-size: 30px;
+        font-family: "Paytone One", serif;
+        margin-top: 130px;
+        text-align: center;
+        color: #443935;
+      }
+      .box-2 pre {
+        font-size: 17px;
+        text-indent: 20px;
+        color: #443935;
+        padding: 40px;
+        position: absolute;
+        top: 150px;
+        font-family: "Nunito", serif;
+      }
+      .box-n-1 {
+        margin-top: 30px;
+        background-image: url(images/hdimg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        border-radius: 0 0 1000px 1000px;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+      }
+      .box-n-2 {
+        background-image: url(images/service-2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        border-radius: 1000px 1000px 0 0;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+      }
+      .box-n-3 {
+        margin-top: 30px;
+        background-image: url(images/service-8.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        border-radius: 0 0 1000px 1000px;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+      } /*new section */
+      .teammember {
+        height: 750px;
+        width: 100%;
+      }
+      .card img {
+        border-radius: 20px !important;
+      }
+      .txt-par {
+        position: relative;
+        border: none !important;
+      }
+      .txt-mem {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 75%;
+        height: 65%;
+        border-radius: 0 20px 0 0;
+        background-color: #443935;
+      }
+      .txt-mem h4 {
+        font-size: 25px;
+      }
+      .txt-mem p,
+      h4 {
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 20px;
+        color: #f69946;
+        text-align: center;
+      }
+      .sl-icon {
+        display: flex;
+        color: #f69946;
+        padding: 5px;
+        margin-left: 9%;
+      }
+      .i-flex {
+        padding: 10px;
+        margin-left: 10px;
+      }
+      .teammember h2 {
+        font-family: "Paytone One", serif;
+        margin-top: 150px;
+        font-size: 50px;
+        color: #443935;
+        text-align: center;
+        margin-left: 150px;
+      }
+      .teammember h3 {
+        font-family: "Paytone One", serif;
+        top: 2900px;
+        left: 740px;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        color: #f69946;
+      } /*next section */
+      #content-sec {
+        width: 100%;
+        height: 700px;
+        background-image: url(images/portfolio-4.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+      }
+      #content-sec p {
+        font-size: 45px;
+        font-family: "Paytone One", serif;
+        text-align: center;
+        padding: 270px;
+        color: #f69946;
+      }
+      #content-sec button {
+        position: absolute;
+        top: 500px;
+        left: 45%;
+        padding: 15px;
+        background-color: #443935;
+        color: #f69946;
+        border-radius: 25px;
+        border-style: none;
+      }
+      .foot-pt-adv {
+        color: #f69946;
+      }
+      .img-1 {
+        position: absolute;
+        width: 400px;
+        top: 400px;
+        left: 0;
+        z-index: 1000;
+      }
+      .img-2 {
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+      } /*section new for blog*/
+      .newblog {
+        width: 100%;
+
+        height: 1100px;
+        background-color: #fcf9f4;
+        position: relative;
+      }
+      .blog1 {
+        top: 200px;
+        left: 130px;
+        position: absolute;
+        border-radius: 20px;
+        background-color: #fff;
+      }
+      .blog2 {
+        top: 200px;
+        right: 130px;
+        position: absolute;
+        background-color: #fff;
+      }
+      .newblog h2 {
+        font-family: "Paytone One", serif;
+        position: absolute;
+        top: 90px;
+        left: 340px;
+        font-size: 50px;
+        color: #443935;
+        text-align: center;
+        margin-left: 150px;
+        z-index: 1000;
+      }
+      .newblog h3 {
+        font-family: "Paytone One", serif;
+        top: 70px;
+        left: 640px;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        color: #f69946;
+      }
+      .cardbtn {
+        padding: 5px;
+        font-family: "Nunito", serif;
+        width: 200px;
+        border-radius: 9px;
+        background-color: #443935;
+        color: #f69946 !important;
+        border: none;
+      }
+      .cardbtn:hover {
+        background-color: white;
+        border: 2px solid #443935;
+      }
+      .card-img-top {
+        border-radius: 0;
+        padding: 10px;
+      }
+      .card-title {
+        font-family: "Nunito", serif;
+        font-size: 35px;
+        color: #f69946;
+      }
+      .card-text {
+        font-size: 20px;
+        font-family: "Nunito", serif;
+      } /* another section */
+      .row {
+        position: relative !important;
+      }
+      .community {
+        width: 100%;
+        height: 500px;
+        background-color: #443935;
+      }
+      .email-text {
+        margin-top: 150px;
+      }
+      .email-text p {
+        color: white !important;
+      }
+      .send {
+        width: 350px;
+        border: 2px solid #f69946 !important;
+        /* position: relative; */
+        padding: 5px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+      }
+      .botton-map {
+        text-decoration: none;
+        background-color: #443935;
+        border: none;
+        outline: none;
+      }
+      .icon-send {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f69946;
+        color: #443935;
+      }
+      .ourservice {
+        position: absolute;
+        top: 100px;
+        left: 35%;
+        color: #f69946;
+      }
+      .ourservice li {
+        padding: 5px;
+      }
+      .openinghour {
+        position: absolute;
+        left: 70%;
+        top: 100px;
+      }
+      .time {
+        margin-left: 100px;
+      }
+      .service-our li {
+        text-decoration: none;
+      }
+      .openinghour ul {
+        border-bottom: 2px solid #f69946;
+        padding: 10px;
+      }
+      .day {
+        color: #fcf9f4;
+      }
+      .service-our h1 {
+        color: #f69946 !important;
+      }
+      .testing-img {
+        position: relative;
+      }
+      .footer-img1 {
+        position: absolute;
+        width: 150px;
+
+        left: 0;
+      }
+      .footer-img2 {
+        position: absolute;
+        width: 150px;
+
+        right: 0;
+      } /*another section  */
+      footer {
+        background-color: #443935;
+        color: #f69946;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .me-10 {
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: #f69946;
+        color: #443935;
+        margin-left: 10px;
+      }
+      .social-icons {
+        position: absolute;
+        right: 90px;
+      }
+      @media screen and (max-width: 1024px) {
+        .hero {
+          width: auto;
+          height: 700px;
+        }
+        .hero h1 {
+          font-size: 40px;
+          top: 25%;
+          margin-left: auto; 
+        }
+
+        .icon {
+          top: 20%;
+          margin-left: auto;
+          font-size: 18px;
+        }
+
+        .but {
+          margin-top: 400px;
+          width: auto; 
+          margin-left: auto; 
+        }
+
+        .img-ps {
+          margin-left: 100px;
+        }
+
+        .icon-img {
+          display: none;
+        }/*another section*/
+        #aboutus{
+          width: 100%;
+          height: 800px;
+        }
+        #aboutus h1 {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 100px;
+       }
+  .aboutus {
+    font-size: 18px;
+    margin-left: 20px;
+    top: 850px;
+  }
+  .bg-col {
+    margin-left: 10px;
+    width: 80%;
+    height: auto; 
+    padding: 20px;
+  }
+  .cardimg h2 {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .cardimg h3 {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .cardimg p {
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .sec-imag {
+    width: 90%;
+    position: relative;
+    top: 200px;
+    border-radius: 9px;
+  }
+
+  .third-img {
+    width: 150px;
+    top: 1100px;
+  }
+  .grid {
+    width: auto;
+    top: -290px;
+    position: absolute;
+    display: flex;
+    text-align: left;
+  }
+  .grid-text {
+    font-size: 10px;
+    text-align: center;
+    margin-top:-100px;
+  }
+  .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* another section */
+  #service{
+    background-color: #fcf9f4;
+    height: auto;
+  }
+  #service h1 {
+    font-size: 36px; 
+    margin-left: 20px; 
+    margin-top: 100px;
+  }
+
+  #service h3 {
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  .box-1, .box-2 {
+    margin-top: 50px;
+    border-radius: 1000px 1000px 0 0!important;
+  }
+
+  .cat-icon {
+    font-size: 60px; 
+    left: 150px; 
+    top: 50px;
+  }
+
+  .box-1 h4, .box-2 h4 {
+    font-size: 24px; 
+    margin-top: 120px; 
+  }
+
+  .box-1 pre, .box-2 pre {
+    font-size: 15px;
+    padding: 20px;
+    top: 160px;
+    margin-left: 100px;
+    text-align: center;
+  }
+.container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-n-1 {
+        margin-top: 0px;
+        height: 350px;
+        position: relative;
+        margin-left: 20px;
+        width: 400px;
+        border-radius:  0 0 1000px 1000px !important;
+      }
+      .box-n-2 {
+        border-radius: 0 0 1000px 1000px   !important;
+      }
+      .box-n-3 {
+        border-radius: 0 0 1000px 1000px !important;
+      }
+  .col-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* another section */
+  .teammember{
+    width: 100%;
+    height: auto;
+    
+  }
+  .teammember h2 {
+    font-size: 36px;
+    margin-left: 20px; 
+    margin-top: 50px;  
+  }
+
+  .teammember h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .container .row {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .col-md-8, .col-lg-4 {
+    width: 90%;
+    margin-bottom: 20px; 
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .txt-mem {
+    width: 100%;
+    height: 50%; 
+    bottom: 0;
+    border-radius: 0 0 20px 20px; 
+    background-color: #443935;
+  }
+  .txt-mem h4 {
+    font-size: 22px;
+    margin-top: 15px; 
+  }
+  .txt-mem p {
+    font-size: 16px; 
+    padding: 5px;  
+  }
+  .sl-icon {
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .i-flex {
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 20px;  
+  }
+  /* another section */
+  #content-sec p {
+    font-size: 30px; 
+    padding: 300px 20px; 
+  }
+  #content-sec button {
+    top: 450px; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  .img-1 {
+    display: none ; 
+  }
+  .img-2 {
+    display: none ; 
+  }
+  /* another section */
+   /*another section*/
+   .row {
+        position: relative !important;
+      }
+      .community {
+        width: 100%;
+        height: 500px;
+        background-color: #443935;
+      }
+      .email-text {
+        margin-top: 150px;
+      }
+      .email-text p {
+        color: white !important;
+      }
+      .send {
+        width: 350px;
+        border: 2px solid #f69946 !important;
+        /* position: relative; */
+        padding: 5px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+      }
+      .botton-map {
+        text-decoration: none;
+        background-color: #443935;
+        border: none;
+        outline: none;
+      }
+      .icon-send {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f69946;
+        color: #443935;
+      }
+      .ourservice {
+        position: absolute;
+        top: 100px;
+        left: 35%;
+        color: #f69946;
+      }
+      .ourservice li {
+        padding: 5px;
+      }
+      .openinghour {
+        position: absolute;
+        left: 70%;
+        top: 100px;
+      }
+      .time {
+        margin-left: 100px;
+      }
+      .service-our li {
+        text-decoration: none;
+      }
+      .openinghour ul {
+        border-bottom: 2px solid #f69946;
+        padding: 10px;
+      }
+      .day {
+        color: #fcf9f4;
+      }
+      .service-our h1 {
+        color: #f69946 !important;
+      }
+      .testing-img {
+        position: relative;
+      }
+      .footer-img1 {
+        position: absolute;
+        width: 150px;
+
+        left: 0;
+      }
+      .footer-img2 {
+        position: absolute;
+        width: 150px;
+
+        right: 0;
+      } /*another section  */
+      footer {
+        background-color: #443935;
+        color: #f69946;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .me-10 {
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: #f69946;
+        color: #443935;
+        margin-left: 10px;
+      }
+      .social-icons {
+        position: absolute;
+        right: 90px;
+      }
+      @media screen and (max-width: 1024px) {
+      header {
+       text-align: center;
+        }
+      .header h1 {
+          font-size: 28px;
+          padding-left: 0;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .col-img {
+          display: none;
+        }
+        .bone-img,
+        .gh-img {
+          display: none;
+        }
+        .about-us-text {
+          font-size: 20px;
+          text-align: center;
+         } /* another section     */
+         .community {
+
+    height: auto;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-text {
+    width: auto;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .email-text p {
+    font-size: 14px;
+    margin: auto;
+  }
+
+  .send {
+    width: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  .botton-map {
+    width: auto;
+    padding: 8px;
+  }
+
+  .icon-send {
+    padding: 12px;
+  }
+
+  .ourservice {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .ourservice li {
+    font-size: 14px;
+  }
+
+  .openinghour {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .time {
+    display: block;
+    margin: auto;
+  }
+
+  .service-our h1 {
+    font-size: 22px;
+  }
+
+  .footer-img1, .footer-img2 {
+    position: static;
+    width: auto;
+    margin: 20px 0;
+  }
+        /* another section */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    position: relative;
+    right: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .me-10 {
+    font-size: 18px;
+    padding: 8px;
+  }
+      }
+
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav-bar nav">
+      <div class="container-fluid">
+        <img src="images/pic0.png" alt="" class="navbar-img" />
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mx-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <button class="btn btn-secondary bg-clo">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="APPOINTMENT"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero">
+        <h1>
+          Taking Care <br />
+          of pets as if they <br />
+          were Our Own
+        </h1>
+        <span class="icon"
+          >Welcome to Petzorg <i class="fa-solid fa-paw foot-pt"></i
+        ></span>
+        <button class="but">
+          CONTACT US
+          <span class="but-icon"><i class="fa-solid fa-paw"></i></span>
+        </button>
+
+        <div class="img-ps">
+          <div class="icon-img">
+            <img src="images/pf1.jpg" alt="" class="p1" />
+            <img src="images/pf2.jpg" alt="" class="p2" />
+            <img src="images/pf3.jpg" alt="" class="p3" />
+            <div class="ptag">
+              <p class="p1-img">
+                4.9 <span><i class="fa-solid fa-star st-col"></i></span>
+              </p>
+              <p class="p2-img">41k reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+     <section id="aboutus">
+      <h1>We Providing The Best <br />Pet Care Services</h1>
+      <span class="aboutus"
+        >About Us <i class="fa-solid fa-paw foot-pt"></i
+      ></span>
+      <div class="leftsd">
+        <div class="bg-col">
+          <div class="cardimg">
+            <h2>1980+</h2>
+            <h3>
+              Trust By Clients<span class="but-icon-sec"
+                ><i class="fa-solid fa-paw"></i
+              ></span>
+            </h3>
+            <p>
+              Educate owners on reading ingredient lists, choosing quality
+              foods, and recognizing harmful ingredients.
+            </p>
+          </div>
+        </div>
+        <img src="images/secimg.webp" alt="" class="sec-imag" />
+        <img src="images/shap-33.webp" alt="" class="third-img" />
+
+        <div class="container">
+          <div class="row grid">
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Nutrition and Diet</a>
+            </div>
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Exercise and Physical Activity</a
+              >
+            </div>
+          </div>
+
+          <div class="row grid">
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Grooming and Hygiene</a>
+            </div>
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Mental & Emotional Well-Being</a>
+            </div>
+          </div>
+          <div class="row grid">
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Preventive Health a</a>
+            </div>
+            <div class="col-6">
+              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Special Needs Pets</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      </div>
+      </div>
+    </section>
+
+     <section id="service">
+      <h1>Making Memories Around the <br>World, Together</h1>
+      <h3>Our Service<i class="fa-solid fa-paw foot-pt"></i></h3>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4 border box-1 " ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>cccA plan for ensuring that young pets
+                 receive their core vaccinations at the 
+                  appropriate ages.</pre></div>
+          <div class="col-4 border box-n-2"></div>
+         
+          <div class="col-4 border box-1" ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>Abbbb plan for ensuring that young pets
+                  receive their core vaccinations at the 
+                  appropriate ages.</pre></div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 border box-n-1"></div>
+          <div class="col-4 border box-2" ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>Aaaa plan for ensuring that young pets
+                 receive their core vaccinations at the 
+                 appropriate ages.</pre></div>
+          <div class="col-4 border box-n-3"></div>
+        </div>
+      </div>
+    </section>
+
+  <section class="teammember">
+      <h2>Meet Our Experience <br>Pet Care Team</h2>
+      <h3>Our Specialists<i class="fa-solid fa-paw foot-pt"></i></h3>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-4 mt-3 c-border">
+           <div class="card txt-par">
+            <img src="images/m1.webp" alt="">
+            <div class="txt-mem">
+            <h4>Selena Gomaz</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="sl-icon">
+              <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <div class="col-md-8 col-lg-4 mt-3 c-border">
+            <div class="card txt-par">
+             <img src="images/m2.webp" alt="">
+ 
+            <div class="txt-mem">
+             <h4>Selena Gomaz</h4>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+ 
+             <div class="sl-icon">
+               <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+             </div>
+ 
+           </div>
+            </div>
+            </div>
+
+            <div class="col-md-8 col-lg-4 mt-3 c-border">
+              <div class="card txt-par">
+               <img src="images/m3.webp" alt="">
+   
+              <div class="txt-mem">
+               <h4>Selena Gomaz</h4>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+   
+               <div class="sl-icon">
+                 <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+               </div>
+             </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="content-sec">
+      <p>"A dog is the only thing on <br>earth that loves you more <br>than he loves himself "</p>
+      <button>MORE DETAILS<i class="fa-solid fa-paw foot-pt-adv"></i></button>
+        <img src="images/kitty.webp" alt="" class="img-1">
+        <img src="images/chick.webp" alt="" class="img-2">
+    </section>
+<!-- 
+   <section class="newblog">
+        <h2>Current News & Blog Posts</h2>
+        <h3>Latest News and Updates<i class="fa-solid fa-paw foot-pt"></i></h3>
+
+        <div class="card blog1">
+          <img src="images/mm.webp" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rabies: What Every Pet <br> Owner Should Know</h5>
+            <p class="card-text">Protecting your pet from rabies is easy and affordable. Learn about the rabies vaccine and why it’s important.</p>
+            <a href="#" class="btn btn-primary cardbtn">Read more <i class="fa-regular fa-circle-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card blog2">
+          <img src="images/mp.webp" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ticks: A Big Problem <br> for You & Your Pet</h5>
+            <p class="card-text">A tag on a collar can easily fall off and be lost. We recommend a microchip for every pet!</p>
+            <a href="#" class="btn btn-primary cardbtn">Read more <i class="fa-regular fa-circle-right"></i></a>
+          </div>
+        </div>
+    </section> -->
+
+     <section class="community">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-4 email-text ">
+           <img src="images/footer.png" alt="">
+           <p>We're here to care for your pets and answer all your questions! Whether you're a new pet parent or want to schedule an appointment.</p>
+           <div class="send"><input type="email" placeholder="Type your message" class=" botton-map"><i class="fa-regular fa-paper-plane icon-send"></i></div> 
+          </div>
+          <div class="col-4 ourservice">
+            <table>
+                <tr class="service-our">
+                  <h1>Our Service</h1>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                </tr>
+            </table>
+          </div>
+          <div class="col-4 openinghour">
+            <table >
+              <tr class="service-our">
+                <h1 style="color: #f69946;">Opening Hour</h1>
+                <ul class="day">Mon - Tues<span class="time">09:00AM - 6:00PM</span></ul>
+                <ul class="day">Wed - Thu<span class="time">09:00AM - 6:00PM</span></ul>
+                <ul class="day">Fri - Sat<span class="time">09:00AM - 6:00PM</span></ul>
+                <ul class="day">Sunday <span class="time">Emergency Only</span></ul>
+              </tr>
+          </table> 
+        </div>
+        </div>
+      </div>
+
+      <hr>
+    </section>
+
+    <footer>
+      <p class="footer">copyright &copy; 2024. All rights reserved. Petzorg. Designed by Themeforest. </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook me-10"></i>
+        <i class="fa-brands fa-twitter me-10"></i>
+        <i class="fa-brands fa-youtube me-10"></i>
+        <i class="fa-brands fa-linkedin me-10"></i>
+      </div>
+    </footer> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/Green and Beige Classic Elegant Nature Foundation Logo (1).png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .nav {
+        font-family: "Nunito", serif;
+        z-index: 10000;
+      }
+      .bg-nav-bar {
+        background-color: #fcf9f4 !important;
+        top: 0px;
+        position: sticky !important;
+      }
+      .bg-clo {
+        background-color: #f69946;
+      }
+      a {
+        color: black !important;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .active:hover {
+        border-bottom: 2px solid #f69946;
+      }
+      .navbar-img {
+        width: 200px;
+        margin-left: 20px;
+      }
+      .hero {
+        width: 100%;
+        height: 800px;
+      } /*another section*/
+      header {
+        height: 250px;
+        width: 100%;
+        background-color: #443935;
+        background-image: url(images/bg.avif);
+        background-position: center;
+        background-size: cover;
+      }
+      .header h1 {
+        color: #f69946;
+        padding-top: 60px;
+        padding-left:50%;
+        font-family: "Paytone One", serif;
+      }
+      .col-img {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .bone-img {
+        width: 100px;
+        height: 100px;
+        margin-top: -100px;
+        margin-left: 45%;
+      }
+      .gh-img {
+        width: 250px;
+        margin-top: -120px;
+        margin-right: 100px;
+      } /*another section*/
+      .aboutus {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+      }
+      .care {
+        display: flex;
+      }
+      .care1 h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        font-family: "Nunito", serif;
+      }
+      .care2 h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 45px;
+        font-family: "Nunito", serif;
+      }
+      .care pre {
+        font-family: "Nunito", serif;
+        font-size: 17px;
+        text-align: justify;
+      }
+      .care1 {
+        width: 300px;
+        height: 430px;
+        background-color: #f9f4ea;
+        margin-left: 90px;
+        margin-top: 190px;
+      }
+      .care1 img {
+        width: 190px;
+        margin-top: -50px;
+        margin-left: 40px;
+      }
+      .care2 {
+        width: 300px;
+        height: 330px;
+        background-color: #f9f4ea;
+        margin-left: 60px;
+        margin-top: 290px;
+      }
+      .care2 img {
+        width: 180px;
+        margin-top: -50px;
+        margin-left: 40px;
+      }
+
+      .botton-map {
+        text-decoration: none;
+        background-color: #443935;
+        border: none;
+        outline: none;
+      }
+      .hdrei {
+        position: relative;
+      }
+      .hdrei h2 {
+        font-family: "Paytone One", serif;
+        margin-top: 150px;
+        padding-right: 100px;
+        font-size: 40px;
+        color: #443935;
+        text-align: center;
+      }
+      .hdrei h3 {
+        font-family: "Paytone One", serif;
+        top: 440px;
+        left: 1100px;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        color: #f69946;
+      }
+      .hdrei p {
+        width: 70%;
+        font-size: 17px;
+        margin-left: 100px;
+        line-height: 35px;
+        text-indent: 20px;
+        text-align: justify;
+      }
+      .foot-pt {
+        color: #443935;
+        margin-left: 12px;
+      }
+      .hdrei button {
+        position: absolute;
+        top: 430px;
+        left: 10%;
+        padding: 10px;
+        background-color: #f69946;
+        color: #443935;
+        border-radius: 25px;
+        border-style: none;
+      } /*new section */
+      .teammember {
+        height: 1250px;
+        width: 100%;
+      }
+      .card img {
+        border-radius: 20px !important;
+      }
+      .txt-par {
+        position: relative;
+        border: none !important;
+      }
+      .txt-mem {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 75%;
+        height: 65%;
+        border-radius: 0 20px 0 0;
+        background-color: #443935;
+      }
+      .txt-mem h4 {
+        font-size: 25px;
+      }
+      .txt-mem p,
+      h4 {
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 20px;
+        color: #f69946;
+        text-align: center;
+      }
+      .sl-icon {
+        display: flex;
+        color: #f69946;
+        padding: 5px;
+        margin-left: 9%;
+      }
+      .i-flex {
+        padding: 10px;
+        margin-left: 10px;
+      }
+      .teammember h2 {
+        font-family: "Paytone One", serif;
+        margin-top: 150px;
+        font-size: 50px;
+        color: #443935;
+        text-align: center;
+        margin-left: 150px;
+      }
+      .teammember h3 {
+        font-family: "Paytone One", serif;
+        top: 1150px;
+        left: 740px;
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px #443935;
+        color: #f69946;
+      }
+      /*another section */
+      .button-list {
+        margin-top: 50px;
+        height: 100px;
+        width: 100%;
+      }
+      .button-list button {
+        width: 200px;
+        padding: 15px;
+        background-color: #443935;
+        color: #f69946;
+        font-size: 23px;
+        border-radius: 20px;
+        border-style: none;
+        margin-left: 10%;
+      }
+      .foot-pt-adv {
+        color: #f9f4ea;
+        padding: 5px;
+        font-size: 25px;
+      } /* another section */
+      .row {
+        position: relative !important;
+      }
+      .community {
+        width: 100%;
+        height: 500px;
+        background-color: #443935;
+      }
+      .email-text {
+        margin-top: 150px;
+      }
+      .email-text p {
+        color: white !important;
+      }
+      .send {
+        width: 350px;
+        border: 2px solid #f69946 !important;
+        /* position: relative; */
+        padding: 5px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+      }
+      .botton-map {
+        text-decoration: none;
+        background-color: #443935;
+        border: none;
+        outline: none;
+      }
+      .icon-send {
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f69946;
+        color: #443935;
+      }
+      .ourservice {
+        position: absolute;
+        top: 100px;
+        left: 35%;
+        color: #f69946;
+      }
+      .ourservice li {
+        padding: 5px;
+      }
+      .openinghour {
+        position: absolute;
+        left: 70%;
+        top: 100px;
+      }
+      .time {
+        margin-left: 100px;
+      }
+      .service-our li {
+        text-decoration: none;
+      }
+      .openinghour ul {
+        border-bottom: 2px solid #f69946;
+        padding: 10px;
+      }
+      .day {
+        color: #fcf9f4;
+      }
+      .service-our h1 {
+        color: #f69946 !important;
+      }
+      .testing-img {
+        position: relative;
+      }
+      .footer-img1 {
+        position: absolute;
+        width: 150px;
+
+        left: 0;
+      }
+      .footer-img2 {
+        position: absolute;
+        width: 150px;
+
+        right: 0;
+      }
+      /*footer section */
+      footer {
+        background-color: #443935;
+        color: #f69946;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .me-10 {
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: #f69946;
+        color: #443935;
+        margin-left: 10px;
+      }
+      .social-icons {
+        position: absolute;
+        right: 90px;
+      }
+      @media screen and (max-width: 1024px) {
+        header {
+          text-align: center;
+        }
+        .header h1 {
+          font-size: 28px;
+          padding-left: 0;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .col-img {
+          display: none;
+        }
+        .bone-img,
+        .gh-img {
+          display: none;
+        }
+        .about-us-text {
+          font-size: 20px;
+          text-align: center;
+        }
+        /* another section */
+        .aboutus {
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0;
+        }
+
+        .care {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          width: auto;
+        }
+
+        .care1,
+        .care2 {
+          width: 90% !important;
+        }
+
+        .care1 img,
+        .care2 img {
+          width: 250px;
+          margin-top: -40px;
+        }
+
+        .care1 h1,
+        .care2 h1 {
+          font-size: 24px;
+          margin-top: auto;
+        }
+
+        .care pre {
+          display: none;
+        }
+        .care1 h2,
+        .care2 h2 {
+          font-size: 24px;
+        }
+        .hdrei h3 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        .hdrei p {
+          width: auto;
+          font-size: 16px;
+          text-align: center;
+        }
+
+        .hdrei button {
+          width: auto;
+          align-items: center;
+          margin: 0;
+          margin-top: 90px;
+        } /*another section */
+        .button-list {
+          position: absolute;
+          top: 2200px;
+          flex-direction: row-reverse;
+          justify-content: center;
+        }
+
+        .button-list button {
+          width: 45%;
+          font-size: 20px;
+          margin: 15px;
+        }
+
+        .foot-pt-adv {
+          font-size: 20px;
+        }
+        /* another section */
+        .teammember h2 {
+          margin-top: 2000px;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .teammember h3 {
+      margin-top: 1800px;
+        font-size: 18px;
+        top: 1050px;
+        left: 50%;
+       
+    }
+
+    .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .col-md-8.col-lg-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .txt-mem {
+        width: auto;
+        height: auto;
+        border-radius: 9px;
+    }
+
+    .txt-mem h4 {
+        font-size: 22px;
+    }
+
+    .txt-mem p {
+        font-size: 18px;
+    }
+
+    .sl-icon {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .i-flex {
+        margin-left: 10px;
+        padding: 8px;
+    }
+
+    .card img {
+        width: auto;
+        height: auto;
+    }
+/* anothersection */
+.community {
+  margin-top: 2300px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-text {
+    width: auto;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .email-text p {
+    font-size: 14px;
+    margin: auto;
+  }
+
+  .send {
+    width: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  .botton-map {
+    width: auto;
+    padding: 8px;
+  }
+
+  .icon-send {
+    padding: 12px;
+  }
+
+  .ourservice {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .ourservice li {
+    font-size: 14px;
+  }
+
+  .openinghour {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .time {
+    display: block;
+    margin: auto;
+  }
+
+  .service-our h1 {
+    font-size: 22px;
+  }
+
+  .footer-img1, .footer-img2 {
+    position: static;
+    width: auto;
+    margin: 20px 0;
+  }
+  /* another section */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    position: relative;
+    right: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .me-10 {
+    font-size: 18px;
+    padding: 8px;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav-bar nav">
+      <div class="container-fluid">
+        <img src="images/pic0.png" alt="" class="navbar-img" />
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mx-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <button class="btn btn-secondary bg-clo">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="APPOINTMENT"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header">
+        <h1>About Us</h1>
+        <div class="col-img">
+          <img src="images/dog-human-6.webp" alt="" class="gh-img" />
+          <img src="images/shap-20.webp" alt="" class="bone-img" />
+        </div>
+      </div>
+    </header>
+
+    <section class="aboutus">
+      <div class="care">
+        <div class="care1">
+          <img src="images/dog-human-9.webp" alt="" />
+          <h1>Personal Care</h1>
+          <pre>
+        This is the most
+        common type of
+        veterinary practice.</pre
+          >
+        </div>
+
+        <div class="care2">
+          <img src="images/shap-22.webp" alt="" />
+          <h1>Special Care</h1>
+        </div>
+      </div>
+      <div class="hdrei">
+        <h2>
+          Making Your Home Good <br />
+          good Nutrition
+        </h2>
+        <h3>Our Service<i class="fa-solid fa-paw foot-pt"></i></h3>
+        <p>
+          This is the most common type of veterinary practice, focusing on the
+          health and well-being of pets like dogs and cats. Rabbits, guinea
+          pigs, hamsters, ferrets, and other small pets. non-traditional pets
+          such as birds, reptiles, and amphibians.
+        </p>
+        <button>MORE DETAILS<i class="fa-solid fa-paw foot-pt-adv"></i></button>
+      </div>
+    </section>
+
+    <section class="button-list">
+      <div>
+        <button><i class="fa-solid fa-paw foot-pt-adv"></i>Pet Caring</button>
+        <button class="care-btn">
+          <i class="fa-solid fa-dog foot-pt-adv"></i>
+          Pet Training
+        </button>
+        <button><i class="fa-solid fa-cat foot-pt-adv"></i>Pet Boarding</button>
+        <button>
+          <i class="fa-solid fa-stethoscope foot-pt-adv"></i>Veterinary
+        </button>
+      </div>
+    </section>
+
+     <section class="teammember">
+      <h2>Meet Our Experience <br>Pet Care Team</h2>
+      <h3>Our Specialists<i class="fa-solid fa-paw foot-pt"></i></h3>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-4 mt-3 c-border">
+           <div class="card txt-par">
+            <img src="images/m1.webp" alt="">
+            <div class="txt-mem">
+            <h4>Selena Gomaz</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="sl-icon">
+              <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <div class="col-md-8 col-lg-4 mt-3 c-border">
+            <div class="card txt-par">
+             <img src="images/m2.webp" alt="">
+ 
+            <div class="txt-mem">
+             <h4>Selena Gomaz</h4>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+ 
+             <div class="sl-icon">
+               <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+               <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+             </div>
+ 
+           </div>
+            </div>
+            </div>
+
+            <div class="col-md-8 col-lg-4 mt-3 c-border">
+              <div class="card txt-par">
+               <img src="images/m3.webp" alt="">
+   
+              <div class="txt-mem">
+               <h4>Selena Gomaz</h4>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+   
+               <div class="sl-icon">
+                 <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+               </div>
+             </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container" style="margin-top: 100px;">
+          <div class="row">
+            <div class="col-md-8 col-lg-4 mt-3 c-border">
+             <div class="card txt-par">
+              <img src="images/m1.webp" alt="">
+              <div class="txt-mem">
+              <h4>Selena Gomaz</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  
+              <div class="sl-icon">
+                <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+                <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+                <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+             <div class="col-md-8 col-lg-4 mt-3 c-border">
+              <div class="card txt-par">
+               <img src="images/m2.webp" alt="">
+   
+              <div class="txt-mem">
+               <h4>Selena Gomaz</h4>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+   
+               <div class="sl-icon">
+                 <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+                 <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+               </div>
+   
+             </div>
+              </div>
+              </div>
+  
+              <div class="col-md-8 col-lg-4 mt-3 c-border">
+                <div class="card txt-par">
+                 <img src="images/m3.webp" alt="">
+     
+                <div class="txt-mem">
+                 <h4>Selena Gomaz</h4>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+     
+                 <div class="sl-icon">
+                   <div class="i-flex"><i class="fa-brands fa-twitter"></i></div>
+                   <div class="i-flex"><i class="fa-brands fa-instagram"></i></div>
+                   <div class="i-flex"><i class="fa-brands fa-linkedin-in"></i></div>
+                   <div class="i-flex"><i class="fa-brands fa-facebook-f"></i></div>
+                 </div>
+               </div>
+                </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+     <section class="community">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-4 email-text">
+            <img src="images/footer.png" alt="" />
+            <p>
+              We're here to care for your pets and answer all your questions!
+              Whether you're a new pet parent or want to schedule an
+              appointment.
+            </p>
+            <div class="send">
+              <input
+                type="email"
+                placeholder="Type your message"
+                class="botton-map"
+              /><i class="fa-regular fa-paper-plane icon-send"></i>
+            </div>
+          </div>
+          <div class="col-4 ourservice">
+            <table>
+              <tr class="service-our">
+                <h1>Our Service</h1>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+                <li>Skin and Ear Cytology</li>
+              </tr>
+            </table>
+          </div>
+          <div class="col-4 openinghour">
+            <table>
+              <tr class="service-our">
+                <h1 style="color: #f69946">Opening Hour</h1>
+                <ul class="day">
+                  Mon - Tues<span class="time">09:00AM - 6:00PM</span>
+                </ul>
+                <ul class="day">
+                  Wed - Thu<span class="time">09:00AM - 6:00PM</span>
+                </ul>
+                <ul class="day">
+                  Fri - Sat<span class="time">09:00AM - 6:00PM</span>
+                </ul>
+                <ul class="day">
+                  Sunday
+                  <span class="time">Emergency Only</span>
+                </ul>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </section>
+
+    <footer>
+      <p class="footer">
+        copyright &copy; 2024. All rights reserved. Petzorg. Designed by
+        Themeforest.
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook me-10"></i>
+        <i class="fa-brands fa-twitter me-10"></i>
+        <i class="fa-brands fa-youtube me-10"></i>
+        <i class="fa-brands fa-linkedin me-10"></i>
+      </div>
+    </footer>  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
