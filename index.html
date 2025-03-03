@@ -234,7 +234,7 @@
       }
       .sec-imag {
         position: absolute;
-        width: 750px;
+        width: 600px;
         top: 1000px;
         right: 0;
         border-radius: 9px 0 0 9px;
@@ -248,11 +248,7 @@
         top: 1200px;
         width: 200px;
       }
-      a {
-        text-decoration: none;
-        padding: 10px;
-        margin-left: 10px;
-      }
+
       .tab {
         text-decoration: none;
       }
@@ -260,13 +256,37 @@
         padding: 10px;
       }
       .grid {
-        width: 50%;
-        margin-left: 20px;
+        width: 60%;
+        margin-left: 15px;
         margin-top: 3px;
       }
       .grid-text {
         font-size: 15px;
-      } /*sec section1*/
+      }
+      @media screen and (max-width: 768px) {
+        .sec-imag {
+        width: 80% !important;
+      }
+      .container .row {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: auto;
+
+      }
+
+      @media screen and (max-width: 380px) {
+        .container .row {
+       position: absolute;
+       top: 200px;
+  } 
+     .grid a{
+      display: none !important;
+      }
+       
+      }
+    }
+       /*sec section1*/
       #service {
         width: 100%;
         height: 1200px;
@@ -297,34 +317,53 @@
         color: #443935;
         margin-left: 12px;
       }
-      .box-2 {
-        height: 350px;
-        border-radius: 0 0 1000px 1000px;
-        position: relative;
-        margin-left: 20px;
-        width: 400px;
-        margin-top: -68px;
+      .container{
+        width: 90% !important;
       }
       .box-1 {
+        width: 30%;
         height: 350px;
         border-radius: 1000px 1000px 0 0;
         position: relative;
-        margin-left: 20px;
-        width: 400px;
+        margin-left: 25x;
         margin-top: 100px;
       }
-      .cat-icon {
+      .box-2 {
+        height: 350px;
+        border-radius: 1000px 1000px 0 0;
+        position: relative;
+        margin-left: 35px;
+        margin-top: 100px;
+        width: 30%;
+      }
+      .box-3 {
+        height: 350px;
+        border-radius: 0 0 1000px 1000px;
+        position: relative;
+        margin-left: 30px;
+        margin-top: -50px;
+        width: 30%;
+      }
+      
+      .box-1 .cat-icon {
         font-size: 80px;
         color: #f69946;
         position: absolute;
-        left: 170px;
-        top: 80px;
+        margin-left: 120px;
+        top: 45px;
       }
       .box-2 .cat-icon {
         font-size: 80px;
         color: #f69946;
         position: absolute;
-        left: 170px;
+        margin-left: 120px;
+        top: 45px;
+      }
+      .box-3 .cat-icon {
+        font-size: 80px;
+        color: #f69946;
+        position: absolute;
+        margin-left: 120px;
         top: 45px;
       }
       .box-1 h4 {
@@ -334,7 +373,7 @@
         text-align: center;
         color: #443935;
       }
-      .box-1 pre {
+      .box-1 p {
         font-size: 17px;
         text-indent: 20px;
         color: #443935;
@@ -350,7 +389,7 @@
         text-align: center;
         color: #443935;
       }
-      .box-2 pre {
+      .box-2 p {
         font-size: 17px;
         text-indent: 20px;
         color: #443935;
@@ -359,26 +398,42 @@
         top: 150px;
         font-family: "Nunito", serif;
       }
-      .box-n-1 {
+      .box-3 h4 {
+        font-size: 30px;
+        font-family: "Paytone One", serif;
+        margin-top: 130px;
+        text-align: center;
+        color: #443935;
+      }
+      .box-3 p {
+        font-size: 17px;
+        text-indent: 20px;
+        color: #443935;
+        padding: 40px;
+        position: absolute;
+        top: 150px;
+        font-family: "Nunito", serif;
+      }
+       .box-n-1 {
         margin-top: 30px;
         background-image: url(images/hdimg.webp);
         background-repeat: no-repeat;
         background-size: cover;
         height: 350px;
-        border-radius: 0 0 1000px 1000px;
+        border-radius: 1000px 1000px 0 0 ;
         position: relative;
-        margin-left: 20px;
-        width: 400px;
-      }
-      .box-n-2 {
+        margin-left: 30px;
+        width: 30%;
+      } 
+       .box-n-2 {
         background-image: url(images/service-2.webp);
         background-repeat: no-repeat;
         background-size: cover;
         height: 350px;
-        border-radius: 1000px 1000px 0 0;
+        border-radius: 0 0 1000px 1000px ;
         position: relative;
-        margin-left: 20px;
-        width: 400px;
+        margin-top: 20px;
+        width: 30%;
       }
       .box-n-3 {
         margin-top: 30px;
@@ -388,13 +443,15 @@
         height: 350px;
         border-radius: 0 0 1000px 1000px;
         position: relative;
-        margin-left: 20px;
-        width: 400px;
-      } /*new section */
+        margin-left: 35px;
+        width: 30%;
+      }   
+      /*new section */
       .teammember {
         height: 750px;
         width: 100%;
       }
+
       .card img {
         border-radius: 20px !important;
       }
@@ -427,6 +484,9 @@
         color: #f69946;
         padding: 5px;
         margin-left: 9%;
+        margin-top: -30px;
+        
+
       }
       .i-flex {
         padding: 10px;
@@ -743,7 +803,7 @@
   }
   .grid {
     width: auto;
-    top: -290px;
+    top: -20px;
     position: absolute;
     display: flex;
     text-align: left;
@@ -751,13 +811,13 @@
   .grid-text {
     font-size: 10px;
     text-align: center;
-    margin-top:-100px;
+    margin-top: 10px;
   }
   .container .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } 
   /* another section */
   #service{
     background-color: #fcf9f4;
@@ -783,25 +843,17 @@
     margin-top: 50px;
     border-radius: 1000px 1000px 0 0!important;
   }
+  .box-3 {
+    margin-top: 50px;
+    border-radius: 1000px 1000px 0 0!important;
+  }
 
   .cat-icon {
-    font-size: 60px; 
-    left: 150px; 
-    top: 50px;
-  }
-
-  .box-1 h4, .box-2 h4 {
-    font-size: 24px; 
-    margin-top: 120px; 
-  }
-
-  .box-1 pre, .box-2 pre {
-    font-size: 15px;
-    padding: 20px;
-    top: 160px;
-    margin-left: 100px;
+    font-size: 60px;
     text-align: center;
+    left: 50px;
   }
+
 .container .row {
     display: flex;
     flex-direction: column;
@@ -881,7 +933,7 @@
     display: flex;
     justify-content: center; 
     padding: 10px;
-    margin-top: 10px;
+    margin-top: -20px;
   }
   .i-flex {
     padding: 5px;
@@ -904,7 +956,6 @@
   .img-2 {
     display: none ; 
   }
-  /* another section */
    /*another section*/
    .row {
         position: relative !important;
@@ -1241,34 +1292,7 @@
         <img src="images/secimg.webp" alt="" class="sec-imag" />
         <img src="images/shap-33.webp" alt="" class="third-img" />
 
-        <div class="container">
-          <div class="row grid">
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Nutrition and Diet</a>
-            </div>
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Exercise and Physical Activity</a
-              >
-            </div>
-          </div>
-
-          <div class="row grid">
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Grooming and Hygiene</a>
-            </div>
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Mental & Emotional Well-Being</a>
-            </div>
-          </div>
-          <div class="row grid">
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Preventive Health a</a>
-            </div>
-            <div class="col-6">
-              <a href="" class="grid-text"><i class="fa-solid fa-paw"></i>Special Needs Pets</a>
-            </div>
-          </div>
-        </div>
+        
        
       </div>
       </div>
@@ -1282,23 +1306,33 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-4 border box-1 " ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>cccA plan for ensuring that young pets
-                 receive their core vaccinations at the 
-                  appropriate ages.</pre></div>
-          <div class="col-4 border box-n-2"></div>
-         
-          <div class="col-4 border box-1" ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>Abbbb plan for ensuring that young pets
-                  receive their core vaccinations at the 
-                  appropriate ages.</pre></div>
-        </div>
-
-        <div class="row">
+          <div class="col-4 border box-1 " >
+            <i class="fa-solid fa-cat cat-icon "></i>
+            <h4>Section1</h4><p>A plan for ensuring that young pets receive their core vaccinations at the appropriate ages.</p>
+          </div>
           <div class="col-4 border box-n-1"></div>
-          <div class="col-4 border box-2" ><i class="fa-solid fa-cat cat-icon "></i><h4>Pet Taxi 24/7</h4><pre>Aaaa plan for ensuring that young pets
+         
+          <div class="col-4 border box-2" >
+            <i class="fa-solid fa-cat cat-icon "></i>
+            <h4>Section2</h4>
+            <p>A plan for ensuring that young pets
+                  receive their core vaccinations at the 
+                  appropriate ages.</p>
+          </div> 
+          </div>
+
+         <div class="row">
+          <div class="col-4 border box-n-2"></div>
+          
+          <div class="col-4 border box-3" >
+            <i class="fa-solid fa-cat cat-icon "></i>
+            <h4>section3</h4>
+            <p>A plan for ensuring that young pets
                  receive their core vaccinations at the 
-                 appropriate ages.</pre></div>
+                 appropriate ages.</p>
+          </div>
           <div class="col-4 border box-n-3"></div>
-        </div>
+        </div> 
       </div>
     </section>
 
@@ -1308,7 +1342,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-lg-4 mt-3 c-border">
+          <div class="col-md-8 col-lg-4">
            <div class="card txt-par">
             <img src="images/m1.webp" alt="">
             <div class="txt-mem">
