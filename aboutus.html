@@ -187,7 +187,7 @@
       }
       .hdrei button {
         position: absolute;
-        top: 430px;
+        top: 530px;
         left: 10%;
         padding: 10px;
         background-color: #f69946;
@@ -258,23 +258,54 @@
       /*another section */
       .button-list {
         margin-top: 50px;
-        height: 100px;
         width: 100%;
+        display: flex;
+        justify-content: center;
       }
+      .button-list div {
+        display: flex;
+        flex-wrap: nowrap; 
+        gap: 15px; 
+        justify-content: center;
+        align-items: center; 
+      }
+
       .button-list button {
-        width: 200px;
+        width: 200px; 
         padding: 15px;
         background-color: #443935;
         color: #f69946;
-        font-size: 23px;
+        font-size: 1.2rem;
         border-radius: 20px;
-        border-style: none;
-        margin-left: 10%;
+        border: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-align: center;
       }
-      .foot-pt-adv {
-        color: #f9f4ea;
-        padding: 5px;
-        font-size: 25px;
+
+      .button-list button:hover {
+        background-color: #f69946;
+        color: #443935;
+      }
+
+      @media screen and (max-width: 768px) {
+        .button-list div {
+          justify-content: space-around;
+        }
+
+        .button-list button {
+          width: 180px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .button-list div {
+          justify-content: space-between;
+        }
+
+        .button-list button {
+          width: 150px;
+        }
       } /* another section */
       .row {
         position: relative !important;
@@ -452,8 +483,7 @@
         .hdrei button {
           width: auto;
           align-items: center;
-          margin: 0;
-          margin-top: 90px;
+          margin-top: -50px;
         } /*another section */
         .button-list {
           position: absolute;
@@ -463,7 +493,7 @@
         }
 
         .button-list button {
-          width: 45%;
+          width: 70%;
           font-size: 20px;
           margin: 15px;
         }
@@ -727,14 +757,9 @@
     <section class="button-list">
       <div>
         <button><i class="fa-solid fa-paw foot-pt-adv"></i>Pet Caring</button>
-        <button class="care-btn">
-          <i class="fa-solid fa-dog foot-pt-adv"></i>
-          Pet Training
-        </button>
+        <button class="care-btn"><i class="fa-solid fa-dog foot-pt-adv"></i>Pet Training</button>
         <button><i class="fa-solid fa-cat foot-pt-adv"></i>Pet Boarding</button>
-        <button>
-          <i class="fa-solid fa-stethoscope foot-pt-adv"></i>Veterinary
-        </button>
+        <button><i class="fa-solid fa-stethoscope foot-pt-adv"></i>Veterinary</button>
       </div>
     </section>
 
