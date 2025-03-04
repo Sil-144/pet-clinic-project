@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petzorg</title>
     <link
       rel="shortcut icon"
-      href="images/Green and Beige Classic Elegant Nature Foundation Logo (1).png"
+      href="images/logo4.png"
       type="image/x-icon"
     />
     <link
@@ -28,7 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+   
     <style>
       * {
         box-sizing: border-box;
@@ -36,11 +37,15 @@
       .nav {
         font-family: "Nunito", serif;
         z-index: 10000;
+        font-weight: bold;
       }
       .bg-nav-bar {
-        background-color: #fcf9f4 !important;
+        background-color: #f6e0ce !important;
         top: 0px;
         position: sticky !important;
+      }
+      .form-control{
+        font-weight: bold;
       }
       .bg-clo {
         background-color: #f69946;
@@ -226,11 +231,18 @@
         color: #f69946;
         text-align: center;
       }
+      .txt-mem h4:hover{
+        color: #f9f4ea;
+      }
       .sl-icon {
         display: flex;
         color: #f69946;
         padding: 5px;
         margin-left: 9%;
+        margin-top: -30px;
+      }
+      .sl-icon i:hover{
+        color: #f9f4ea;
       }
       .i-flex {
         padding: 10px;
@@ -241,8 +253,8 @@
         margin-top: 150px;
         font-size: 50px;
         color: #443935;
-        text-align: center;
-        margin-left: 150px;
+        text-align: justify;
+        justify-content: center;
       }
       .teammember h3 {
         font-family: "Paytone One", serif;
@@ -311,6 +323,7 @@
         position: relative !important;
       }
       .community {
+        margin-top: 100px;
         width: 100%;
         height: 500px;
         background-color: #443935;
@@ -347,8 +360,11 @@
       .ourservice {
         position: absolute;
         top: 100px;
-        left: 35%;
+        left: 45%;
         color: #f69946;
+        text-align: justify;
+        justify-content: center;
+
       }
       .ourservice li {
         padding: 5px;
@@ -363,6 +379,9 @@
       }
       .service-our li {
         text-decoration: none;
+        text-align: justify;
+        justify-content: center;
+        overflow: hidden;
       }
       .openinghour ul {
         border-bottom: 2px solid #f69946;
@@ -377,12 +396,13 @@
       .testing-img {
         position: relative;
       }
+
       .footer-img1 {
         position: absolute;
         width: 150px;
-
         left: 0;
       }
+
       .footer-img2 {
         position: absolute;
         width: 150px;
@@ -469,6 +489,11 @@
         .care2 h2 {
           font-size: 24px;
         }
+        .hdrei h2 {
+        text-align: justify;
+       justify-content: center;
+        overflow: hidden;
+        }
         .hdrei h3 {
           font-size: 18px;
           text-align: center;
@@ -488,14 +513,11 @@
         .button-list {
           position: absolute;
           top: 2200px;
-          flex-direction: row-reverse;
-          justify-content: center;
+          display: block;
         }
 
         .button-list button {
-          width: 70%;
-          font-size: 20px;
-          margin: 15px;
+          display: block;
         }
 
         .foot-pt-adv {
@@ -503,16 +525,16 @@
         }
         /* another section */
         .teammember h2 {
-          margin-top: 2000px;
+          margin-top: 1500px;
         font-size: 40px;
         margin-left: 50px;
+        text-align: justify;
+        align-items: center;
+        overflow: hidden;
     }
 
     .teammember h3 {
-      margin-top: 1800px;
-        font-size: 18px;
-        top: 1050px;
-        left: 50%;
+     display: none;
        
     }
 
@@ -544,6 +566,7 @@
     .sl-icon {
         justify-content: center;
         margin-left: 0;
+        margin-top: auto;
     }
 
     .i-flex {
@@ -557,7 +580,7 @@
     }
 /* anothersection */
 .community {
-  margin-top: 2300px;
+  margin-top: 2400px;
     height: auto;
     padding: 20px;
   }
@@ -577,6 +600,9 @@
   .email-text p {
     font-size: 14px;
     margin: auto;
+  }
+  .email-text img {
+    width: 50%;
   }
 
   .send {
@@ -599,7 +625,8 @@
     top: auto;
     left: auto;
     width: auto;
-    text-align: center;
+    text-align: justify;
+    justify-content: center;
   }
 
   .ourservice li {
@@ -907,14 +934,12 @@
             <table>
               <tr class="service-our">
                 <h1>Our Service</h1>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
-                <li>Skin and Ear Cytology</li>
+                  <li>Skin and Ear Cytology</li>
+                  <li>Ultrasound Scan Services</li>
+                  <li>Dental Care and Clenings</li>
+                  <li>Nutritional Counseling</li>
+                  <li>Puppy Wellness Program</li>
+                  <li>Pets Surgical Services</li>
               </tr>
             </table>
           </div>
