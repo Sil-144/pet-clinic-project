@@ -1,0 +1,51 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.text-primary {
+  color: #f69946 !important;
+}
+
+.bg-secondary {
+  background-color: #443935 !important;
+}
+
+.list-group-item {
+  border-radius: 0;
+}
+
+.list-group-item-action:hover {
+  background-color: #f69946;
+  color: white;
+}
+
+.h4 {
+  font-family: "Paytone One", serif;
+}
+
+.navbar-nav .nav-link {
+  color: #443935;
+}
+
+.navbar-nav .nav-link.active {
+  color: #f69946;
+}
+
+.badge {
+  background-color: #f69946;
+}
+
+.alert-info {
+  background-color: #f69946;
+  color: white;
+}
+
+.alert-info a {
+  color: white;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+}
